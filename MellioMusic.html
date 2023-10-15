@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<head>
+        <title>Michael Elliott</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Michael Elliott">
+
+       <!--Adds every characters from all foreign languages-->
+        <meta charset="UTF-8">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="styles.css" />
+        <!--Font-awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    
+
+<body>
+        
+        <div class="hero">
+
+        <!--Nav Bar-->
+        <header class="main-header">
+            <nav>
+                <ul class="main-nav">
+                    <li><a id="home-page">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Demos</a></li>
+                    <li><a href="#">Contact me</a></li>    
+                </ul>
+            </nav>
+        <!--End nav bar--> 
+
+        </header>
+                <div class="portrait">
+                    <img class="img-portrait" src="Images/Portait.jpg" alt="Portait">  
+                </div>
+<!--Page Wrapper-->
+<div class="wrapper"> 
+      
+    <!--Home Section-->
+     <div class="main-page-content">
+       
+        <!--Home Section Content-->
+        <main>      
+                    <h3 class="name">Michael Elliott</h3>
+                    <h1 class="Title">Composer</h1>
+                    <h5 class="Below-title">Writing scores and kicking ass, Rotdog</h5>
+                    <!--ADD asymetric bg images-->
+                    <button class="contact-me-button" type="button">Contact me</button>
+                 
+                    <!-- Social media-->
+                    <ul class="social-media">
+                <li>
+                <a href="https://www.facebook.com/melliomusic/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                 </li>
+                 <li>
+                 <a href="https://melliomusic.itch.io/" target="_blank">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+                 </li>
+                 <li>
+    
+                <a href="https://www.youtube.com/@MellioMusic" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                </li>
+                </ul>
+                <!--End Social Media-->
+    
+        </main>
+           
+    </div>                
+    <!-- End Home Section-->  
+
+</div>
+    
+</div>
+        
+<!--About Section-->
+<div class="wrapper">
+        <section>
+            <h2>Meet Michael</h2>
+            <p> A Canadian video game composer working out of Halifax, Nova Scotia. <br>
+                He began writing music for games and short film in 2017, where he started by making short 
+                soundtracks for local game jams. <br>
+                Working primarily on intimate piano and string pieces, 
+                he has ventured so far as to work on a banana dating simulator (Appealing Personality, 2018)! 
+                Michael’s music was used in the audiobook ‘The Pyre’ written by Peter G. Andresen, 
+                where the introduction to his song ‘The Forge’ (2020) sets a somber and ominous tone. 
+               <br> Michael draws inspiration from many sources, such as John Williams and Yoko Shimomura, 
+                as well as his favourite soundtrack ‘Shadow of The Colossus’.</p>
+        </section>
+<!--End About Section-->
+
+
+<!--Demo Section-->
+        <section>
+            <h2>Demos</h2>
+            <!-- ADD Music player-->
+            <!-- ADD youtube videos-->
+        </section>
+<!--End Demo Section-->
+
+
+<!--Contact Section-->
+    <section>
+                <!--Contact Form-->
+                <div class="container">
+                    <span class="big-circle"></span>
+                    <div class="form">
+                        
+                        <div class="contact-info"> <!-- .contact-info (shortcut)-->
+                            <h3 class="info-title">Let's work together!</h3> 
+                            <p class="info-text">  </p> <!--If want to add a little blurb-->
+                            <div class="info">
+                                <div class="information">
+                                    <i class="fa-solid fa-envelope fa-2x"></i>
+                                    <p class="info-email">melliomusic@outlook.com</p>
+                                </div>
+                            </div>
+
+                                    <div class="contact-social-media"> 
+                                        <div class="social-icon">
+                                            <a href="https://www.facebook.com/melliomusic/" target="_blank">
+                                                <i class="fa-brands fa-square-facebook" style="color: #f5f5fa;"></i>
+                                            </a>
+
+                                            <a href="https://melliomusic.itch.io/" target="_blank">
+                                                <i class="fa-brands fa-itch-io" style="color: #f5f5fa;"></i>
+                                            </a>
+
+                                            <a href="https://www.youtube.com/@MellioMusic" target="_blank">
+                                                <i class="fa-brands fa-youtube" style="color: #f5f5fa;"></i>
+                                            </a>
+                                        </div>
+                                    </div>  
+                        </div> 
+
+                        <div class="contact-form" method="post">
+                            <span class="circle one"></span>
+                            <span class="circle two"></span> <!-- span.circle* (shortcut)-->
+                        
+                        
+                        <form action="mail.php" method="post">
+                            <h3 class="contact-title">Contact Me</h3>
+                                
+                                <div class="input-container"> <!--Enter Full name on form-->
+                                        <input type="text" name="name" class="input" required>
+                                        <label for="">Full name</label>
+                                        <span>Full name</span>
+                                </div>
+
+                                <div class="input-container"> <!--Enter email on form-->
+                                    <input type="email" name="email" class="input" required>
+                                    <label for="">Email</label>
+                                    <span>Email</span>
+                                </div>
+
+                                <div class="input-container textarea"> <!--Enter Message form-->
+                                    <textarea name="Message" class="input" required></textarea>
+                                    <label for="">Type your messsage here...</label>
+                                    <span>Type your messsage here...</span>
+                                </div>
+
+                                <input type="submit" value="Send" class="btn">
+
+                        </form>
+                        
+                        </div>          
+                    </div>
+                </div>
+                    
+            <script src="app.js"></script>
+
+
+                <!--End contact form-->
+          
+        </section>
+ <!--End Contact Section-->      
+        
+    </div>
+    
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-items">
+                <!--Name-->
+            <h3>Michael Elliott</h3>
+            <!--Social media links-->
+            <ul class="social-media-footer">
+                <li>
+                <a href="https://www.facebook.com/melliomusic/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                 </li>
+                 <li>
+                 <a href="https://melliomusic.itch.io/" target="_blank">
+                    <i class="fa-brands fa-itch-io"></i>
+                </a>
+                 </li>
+                 <li>
+    
+                <a href="https://www.youtube.com/@MellioMusic" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                </li>
+                </ul>
+                <!--End social media links-->
+        </div>
+        </footer>
+
+        <!--End Footer-->
+    </body>
+       
+</html>

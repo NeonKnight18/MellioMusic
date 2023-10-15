@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    Padding: 0; 
+    font-family: "Barlow", sans-serif;
+    color: #43464D
+}
+
+body {
+    background: #f5f5fa;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 62.5rem;
+}
+
+.hero{ 
+    background-color: #f5f5fa;
+    min-height: 100vh;
+    
+}
+
+
+.img-portrait{     /*Home page portrait */
+    height: 95vh;  
+    float: right;
+    position: absolute;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.main-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    display: flex;
+    padding-bottom: 25px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 25px;
+    font-weight: 400;
+   Font-size: 1.25rem;
+   color: #43464D;
+   text-transform: uppercase;
+
+   position: relative;
+    
+}
+
+.main-nav li a:hover {
+    color: #cce0ff;
+    transition-duration: 250ms;
+}
+
+.main-nav li a::before {
+content: '';
+display: block;
+height: 4px;
+width: 100%; 
+background-color: #43464D;
+position: absolute;
+top: 0;
+width: 0%;
+transition: all ease-in-out 250ms;
+}
+
+.main-nav li a:hover::before {
+    color: #cce0ff;
+    transition-duration: 125ms;
+    font-weight: var(--bold);
+   width: 100%;
+   background-color: #cce0ff;
+}
+
+
+.social-media li {
+    display: inline-block;
+    align-items: right;
+    padding: 10px 0;
+}
+
+.contact-me-button {
+    padding: 15px 30px;
+    background-color: rgba(72, 87, 126, 1);
+    Border: none;
+    border-radius: 15px;
+    cursor: pointer;    
+    transition: all 0.3s ease 0s; 
+    margin-top: 6.06rem;
+    color: #cce0ff;
+    font-size: 1.1rem;
+}
+
+button:hover {
+ background-color: #43464D;
+ color: #f5f5fa;
+}
+
+/*===================
+Main Page
+===================*/
+.Title {
+    font-weight: 500;
+    letter-spacing: 0.6;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: Left;
+    margin-top: 2.125rem;
+}
+
+.name {
+    font-weight: 300;
+    letter-spacing: 10;
+    text-transform:uppercase;
+    font-size: 2rem;
+    margin-top: 13rem;   
+}
+
+.Below-title {
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-top: 2.125rem;
+}
+
+
+/*==================
+ Contact me form 
+ =================*/
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f5f5fa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 51.25rem;
+    background-color: #cce0ff;
+    border-radius: 10px; /*Make rounded-corners*/
+    box-shadow: 0 0 20px 1px rgba(15, 12, 12, 0.1); /*Adds shadow around shape*/
+    z-index: 1000;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.contact-form {
+    background-color: #43464D;
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 20%, #303338);
+    position: absolute;
+}
+
+.circle.one {
+    width: 8.125rem;
+    height: 8.125rem;
+    top: 130px;
+    right: -40px;
+
+}
+
+.circle.two {
+    width: 5rem;
+    height: 5rem;
+    top: 10px;
+    right: 30px;
+    
+}
+
+.contact-form:before {
+    content: "";
+    position: absolute;
+    width: 1.625rem;
+    height: 1.625rem;
+    background-color: #43464D; 
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+
+}
+
+form{
+    padding: 2.3rem 2.2rem;
+    z-index:10;
+    overflow:hidden;
+    position: relative;
+}
+
+.contact-title{
+    color: #cce0ff;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.input-container{
+    position: relative;
+    margin: 1rem 0;
+
+}
+
+.input{
+    width:100%;
+    outline: none;
+    border: 2px solid #cce0ff;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #cce0ff;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    border-radius: 25px;
+    transition: 0.3s
+}
+
+textarea.input{
+    padding: 0.8rem 1.2rem;
+    min-height: 200px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.input-container label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #cce0ff;
+    font-size: 0.95rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+
+}
+
+.input-container.textarea label{
+    top:1rem;
+    transform: translateY(0)
+}
+
+.btn{
+    padding: 15px 30px;
+    background-color: #cce0ff;
+    border: 2px solid #cce0ff;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #43464D;
+    line-height: 1;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    margin: 0;
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #cce0ff;
+}
+
+.input-container span{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+    
+  }
+
+.input-container span:before,
+.input-container span:after{
+    content: "";
+    position:absolute;
+    width: 50%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: #43464D;
+}
+
+.input-container span:before{
+    left:50%;
+}
+
+.input-container span:after{
+    right: 50%;
+}
+
+.input-container.focus label{
+    top: 0;
+    transform: translateY(-50%);
+    left:25px;
+    font-size: 0.85rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after{
+    width:50%;
+    opacity: 1;
+}
+
+
+.contact-info {
+    background-color: #f5f5fa;
+    padding: 2.3rem 2.2rem;
+    position: relative;
+
+}
+
+.info-title{
+    font-size: 2rem;
+    font-weight: 500;
+    
+}
+
+.info-text{
+    margin: 1.5rem 0 2rem 0;
+}
+
+.information{
+    display: flex;
+    margin: 0.7rem 0;
+    align-items: center;
+    
+}
+
+.info-email{
+    margin: 0 0.7rem;
+    font-size: 1.25rem;
+}
+
+.contact-social-media{
+    padding: 2rem 0 0 0;
+    align-self: center;
+}
+
+.social-icon{
+    display: flex;
+    margin: 0.5rem;
+}
+
+.social-icon a{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #303338, #43464D);
+    text-align: center;
+    color: #f5f5fa;
+    line-height: 35px;
+    margin-right: 0.5em;
+    transition: 0.3s;
+}
+
+.social-icon a:hover{
+    transform: scale(1.05);
+}
+
+.contact-info::before{
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 180px;
+    border: 20px solid #43464D;
+    border-radius: 50%;
+    bottom: -120px;
+    right: 50px;
+    opacity: 0.2;
+}
+
+.big-circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #303338, #43464D);
+    bottom: 50%;
+    right:50%;
+    transform: translate(-40%, 38%); /*How to go around the wrapper??? Go back to the video: https://www.youtube.com/watch?v=rpujWVkmiPE&ab_channel=TrueCoder*/
+}
+
+
+@media (max-width: 850px){
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+.contact-info:before { /*To change the little ring's position depending on media*/
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+}
+.contact-form::before { /*Changes the cursors position depending on  media*/
+    top:-13px;
+    left: initial;
+    right: 70px;
+}
+
+.text{
+    margin: 1rem 0 1.5rem 0;
+}
+
+.contact-social-media{
+    padding: 1.5rem 0 0 0;
+}
+
+}
+
+.footer {
+    background-color: #43464D;
+    padding: 0.25rem 0;
+}
